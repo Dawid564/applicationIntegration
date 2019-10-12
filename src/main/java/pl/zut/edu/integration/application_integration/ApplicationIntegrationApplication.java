@@ -21,13 +21,13 @@ public class ApplicationIntegrationApplication {
         BookManager bookManager = new BookManager(books);
 
         List<Book> booksByTitle = bookManager.searchByTitle("Java rulez");
-        System.out.println(booksByTitle);
+        System.out.println(booksByTitle.get(0).getAuthor());
 
         List<Book> booksByAuthor = bookManager.searchByAuthor("James Gosling");
-        System.out.println(booksByAuthor);
+        System.out.println(booksByAuthor.get(0).getAuthor());
 
         Book bookBiIsbn = bookManager.searchByISBN("2244668800");
-        System.out.println(bookBiIsbn);
+        System.out.println(bookBiIsbn.getAuthor());
     }
 
 }

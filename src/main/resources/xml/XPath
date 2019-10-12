@@ -1,0 +1,3 @@
+/books/book[isbn='978-83-246-2785-1']/isbn
+/books/book/authors[author='Marcin Lis']/author
+/books/book[contains(title, 'PHP') and year>2009]/title
